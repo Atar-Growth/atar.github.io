@@ -1,0 +1,66 @@
+/* General styles for tabs */
+.tab {
+  overflow: hidden;
+  border: 1px solid #CDE3F1;
+  background-color: #CDE3F1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #a0bbcc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #89bcdc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 12px 20px;
+  border: 1px solid #CDE3F1;
+  border-top: none;
+}
+
+/* Style the pre element inside the tabcontent for better code readability */
+pre {
+  background-color: #f4f4f4;
+  border: 1px solid #CDE3F1;
+  padding: 20px;
+  margin-bottom: 3px;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+  overflow: auto;
+}
+
+code {
+  display: block; /* Ensure it takes up the full block */
+  border: none;
+  white-space: pre; /* Preserve whitespace */
+  font-family: inherit;
+  font-size: 12px;
+}
+
+/* Improved copy button */
+.copybtn {
+  display: block;
+  width: 100%;
+  background: none;
+  font-size: 10px;
+  color: #89bcdc;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+}
