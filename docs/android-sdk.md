@@ -96,8 +96,8 @@ Once you've initialized the Atar SDK, you can show offers to your users. Here's 
     request.userId = "userId1234";
     request.email = "user1234@email.com";
     request.phone = "1234567890";
-    // this is some unique referenced ID for the transaction
-    request.referenceId = UUID.randomUUID().toString();
+    // this is some unique reference ID for the transaction
+    request.referenceId = "12345;
     request.gender = "M";
     request.dob = "YYYYMMDD";
     request.address1 = "123 Example St";
@@ -132,7 +132,7 @@ Once you've initialized the Atar SDK, you can show offers to your users. Here's 
     request.email = "user1234@email.com";
     request.phone = "1234567890";
     // this is some unique referenced ID for the transaction
-    request.referenceId = UUID
+    request.referenceId = "12345";
 
     .randomUUID().toString(); 
     request.gender = "M";

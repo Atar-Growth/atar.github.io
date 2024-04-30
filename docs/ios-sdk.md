@@ -38,6 +38,18 @@ You can verify that Atar has been successfully added by:
 
 ## Step 3: Initialize the Atar SDK
 
+Import the library in your **AppDelegate** class.
+
+=== "Swift"
+    ``` swift
+    import Atar
+    ```
+
+=== "Objective C"
+    ``` objc
+    #import "Atar-Swift.h"
+    ```
+
 Initialize the Atar SDK in your **AppDelegate** class's **didFinishLaunchingWithOptions** method.
 
 === "Swift"
@@ -64,78 +76,68 @@ Replace **YOUR APP KEY** with the App Key you got from the Atar Dashboard.
 
 Once you've initialized the Atar SDK, you can show offers to your users. Here's an example of how you can show an interstitial offer after the user has completed a transaction.
 
-=== "Java"
-    ```java
-    OfferRequest request = new OfferRequest(new OfferRequestCallback() {
-    @Override
-    public void onShown(boolean success, Exception error) {
-        if (success) {
-            Log.i("AtarTestBed", "Popup shown successfully");
-        } else {
-            Log.e("AtarTestBed", "Error: " + error.getMessage());
-        }
+=== "Swift"
+    ```swift
+    let request = OfferRequest()
+    request.onScheduled = { success, error in
+        print("onScheduled: \(success), \(error?.localizedDescription ?? "no error")")
     }
-    @Override
-    public void onClicked() {
-        Log.i("AtarTestBed", "Interstitial was clicked!");
+    request.onSent = {
+        print("onSent")
     }
-    });
-
-    // Complete the information about the user and transaction
-    request.event = "purchase";
-    request.userId = "userId1234";
+    request.onClicked = {
+        print("onClicked")
+    }
+    request.event = "purchase"
+    request.userId = "userId5678"
     request.email = "user1234@email.com";
     request.phone = "1234567890";
-    // this is some unique referenced ID for the transaction
-    request.referenceId = UUID.randomUUID().toString();
-    request.gender = "M";
-    request.dob = "YYYYMMDD";
-    request.address1 = "123 Example St";
-    request.address2 = "Suite 123";
-    request.city = "City";
-    request.state = "State";
-    request.zip = "12345";
-    request.country = "Country";
-    request.amount = 29.98;
 
-    Atar.getInstance(this).showOfferPopup(request);
+    // this is some unique reference ID for the transaction
+    request.referenceId = "123456"
+    request.firstName = "Alex"
+    request.lastName = "Austin"
+    request.address1 = "123 Example St"
+    request.address2 = "Suite 123"
+    request.city = "Big City"
+    request.state = "ST"
+    request.zip = "12345"
+    request.country = "US"
+    request.amount = 29.98
+    
+    Atar.getInstance().showOfferPopup(request: request)
     ```
 
-=== "Kotlin"
-    ```kotlin
-    val request = OfferRequest(object : OfferRequestCallback {
-      override fun onShown(success: Boolean, error: Exception?) {
-          if (success) {
-              Log.i("AtarTestBed", "Popup shown successfully")
-          } else {
-              Log.e("AtarTestBed", "Error: " + error?.message)
-          }
-      }
-      override fun onClicked() {
-          Log.i("AtarTestBed", "Interstitial was clicked!")
-      }
-    })
+=== "Objective C"
+    ```objc
+    OfferRequest *request = [[OfferRequest alloc] init];
+    request.onScheduled = ^(BOOL success, NSError * _Nullable error) {
+        NSLog(@"onScheduled: %d, %@", success, error.localizedDescription);
+    };
+    request.onSent = ^{
+        NSLog(@"onSent");
+    };
+    request.onClicked = ^{
+        NSLog(@"onClicked");
+    };
+    request.event = @"purchase";
+    request.userId = @"userId5678";
+    request.email = @"user1234@email.com";
+    request.phone = @"1234567890";
 
-    // Complete the information about the user and transaction
-    request.event = "purchase";
-    request.userId = "userId1234";
-    request.email = "user1234@email.com";
-    request.phone = "1234567890";
-    // this is some unique referenced ID for the transaction
-    request.referenceId = UUID
-
-    .randomUUID().toString(); 
-    request.gender = "M";
-    request.dob = "YYYYMMDD";
-    request.address1 = "123 Example St";
-    request.address2 = "Suite 123";
-    request.city = "City";
-    request.state = "State";
-    request.zip = "12345";
-    request.country = "Country";
+    // this is some unique reference ID for the transaction
+    request.referenceId = @"123456";
+    request.firstName = @"Alex";
+    request.lastName = @"Austin";
+    request.address1 = @"123 Example St";
+    request.address2 = @"Suite 123";
+    request.city = @"Big City";
+    request.state = @"ST";
+    request.zip = @"12345";
+    request.country = @"US";
     request.amount = 29.98;
-
-    Atar.getInstance(this).showOfferPopup(request);
+    
+    [[Atar getInstance] showOfferPopupWithRequest:request];
     ```
 
 Replace the values in the **OfferRequest** object with the appropriate values for your user and transaction. Below you can find the full documented list of fields you can use in the **OfferRequest** object.
