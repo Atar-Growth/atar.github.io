@@ -1,0 +1,32 @@
+site_name: Atar Integration Docs
+nav:
+  - Overview: index.md
+  - iOS SDK: ios-sdk.md
+  - Android SDK: android-sdk.md
+site_url: https://atar-growth.github.io/docs
+site_description: Atar Integration Docs
+site_author: Atar Growth
+theme:
+  name: material
+  logo: images/logo-light.png
+  favicon: images/favicon.ico
+  palette:
+    primary: blue grey
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+plugins:
+  - search
+extra:
+  generator: false
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      
