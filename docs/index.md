@@ -21,8 +21,8 @@ In order to use the SDK-less integration, you must have one of the following cus
 
 To further optimize the integration, you can add Atar's lightweight SDK to your apps:
 
-- [Android](android-sdk) shows how to enable offers with Atar's Android SDK.
-- [iOS](ios-sdk) shows how to enable offers with Atar's iOS SDK.
+- [Android](android-sdk.md) shows how to enable offers with Atar's Android SDK.
+- [iOS](ios-sdk.md) shows how to enable offers with Atar's iOS SDK.
 
 ## Need help?
 
