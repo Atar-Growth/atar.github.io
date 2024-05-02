@@ -9,13 +9,13 @@ Welcome to the Atar documentation for apps that plan to showcase offers in their
 ## SDK-less integration
 In order to use the SDK-less integration, you must have one of the following customer communication platforms integrated into your app. Atar sends the offers via these platforms.
 
-- [OneSignal](#) shows how to enable offers with OneSignal.
-- [Clevertap](#) shows how to enable offers with Clevertap.
-- [Braze](#) shows how to enable offers with Braze.
-- [Airship](#) shows how to enable offers with Airship.
-- [Moengage](#) shows how to enable offers with Moengage.
-- [Customer.io](#) shows how to enable offers with Customer.io.
-- [Iterable](#) shows how to enable offers with Iterable.
+- [OneSignal](#) shows how to enable offers with OneSignal - docs provided upon request.
+- [Clevertap](#) shows how to enable offers with Clevertap - docs provided upon request.
+- [Braze](#) shows how to enable offers with Braze - docs provided upon request.
+- [Airship](#) shows how to enable offers with Airship - docs provided upon request.
+- [Moengage](#) shows how to enable offers with Moengage - docs provided upon request.
+- [Customer.io](#) shows how to enable offers with Customer.io - docs provided upon request.
+- [Iterable](#) shows how to enable offers with Iterable - docs provided upon request.
 
 ## SDK integration
 
@@ -23,6 +23,8 @@ To further optimize the integration, you can add Atar's lightweight SDK to your 
 
 - [Android](android-sdk.md) shows how to enable offers with Atar's Android SDK.
 - [iOS](ios-sdk.md) shows how to enable offers with Atar's iOS SDK.
+- [Build your own iOS integration](ios-custom.md) shows how to build your own iOS client side integration with Atar.
+- [Build your own Android integration](android-custom.md) shows how to build your own Android client side integration with Atar.
 
 ## Need help?
 
