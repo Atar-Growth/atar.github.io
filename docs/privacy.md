@@ -1,27 +1,5 @@
 # Atar Growth Privacy Policy
 
-* [Introduction](#introduction)
-* [Atar Services](#atar-services)
-* [Your Choices and Their Implications](#your-choices-and-their-implications)
-* [Commitment to Your Privacy](#commitment-to-your-privacy)
-* [Definition of Personal Information](#definition-of-personal-information)
-* [Collection and Use of Personal Information](#collection-and-use-of-personal-information)
-* [Sharing of Personal Information](#sharing-of-personal-information)
-* [International Transfers of Personal Information](#international-transfers-of-personal-information)
-* [Security Measures](#security-measures)
-* [Retention of Personal Information](#retention-of-personal-information)
-* [Use of Tracking Technologies](#use-of-tracking-technologies)
-* [Exclusions](#exclusions)
-* [Your Privacy Rights](#your-privacy-rights)
-* [Opting Out and Unsubscribing](#opting-out-and-unsubscribing)
-* [California Privacy Rights](#california-privacy-rights)
-* [Children’s Privacy](#childrens-privacy)
-* [Privacy Concerns and Complaints](#privacy-concerns-and-complaints)
-* [Updates to This Privacy Policy](#updates-to-this-privacy-policy)
-* [Contact Us](#contact-us)
-
-## Introduction
-
 This Privacy Policy and Notice at Collection ("Privacy Policy") explains how Atar Growth, Inc ("Atar Growth", "us", "our", and "we"), collects and uses Personal Information (as defined below) and outlines the basis on which we process the Personal Information we collect from or about you. This document aims to provide concise, transparent, intelligible, and easily accessible information about our data processing practices—please take the time to read it thoroughly.
 
 This Privacy Policy applies to all users of Atar Growth services accessed through atargrowth.com and other associated Atar Growth websites ("Atar Owned Sites"), as well as Atar Growth technology integrated on third-party partner websites, apps, or mobile-device applications ("Partner Sites") (collectively, "Atar Sites"). This Privacy Policy also applies to individuals who interact with Atar Growth in a professional capacity on behalf of their company or employer in transactions with Atar Growth. However, this Privacy Policy does not apply in situations where Atar Growth processes your Personal Information solely on behalf of our Partners to enable them to offer their services directly and not on behalf of other Advertisers. For information on how these Partners use your Personal Information, please consult their respective privacy policies or notices. Additionally, if you are an Atar Growth employee or contractor, or if you apply for a job with Atar Growth, the Personal Information collected in these contexts will be covered under separate privacy policies provided to you as appropriate.
@@ -85,8 +63,6 @@ Information from one Atar service may be combined with information from other At
 
 ## Collection and Use of Personal Information
 
-## Use and Disclosure of Personal Information at Atar Growth
-
 Atar Growth's technology enables us to display Offers from Partners and Advertisers on Atar Sites, and allows you to opt in to receive communications regarding such Offers. Below, we detail how your Personal Information is utilized by Atar Growth and the principles guiding our disclosure of information to Partners, Advertisers, and other third-party processors.
 
 ### (i) Use of Personal Information by Atar Growth
@@ -109,13 +85,7 @@ We use your Personal Information for the following purposes:
 
 We may specify additional purposes for collecting your Personal Information at the time of collection.
 
-## Sharing of Personal Information
-
-## Disclosure of Your Personal Information
-
-At Atar Growth, we may disclose your Personal Information in several contexts to ensure the effective delivery of our services and Offers. Below are the ways and circumstances under which your information may be shared:
-
-### Sharing Personal Information with Partners and Advertisers
+### (ii) Sharing Personal Information with Partners and Advertisers
 
 - Engaging with Offers: When you interact with Offers on a Partner’s site, by actions such as swiping or clicking, we share the Personal Information you provide and information related to the Offer with the Partner.
 - Accepting Advertiser Offers: If you accept Offers from Advertisers, we share your Personal Information, including details like your email address, segmentation data (e.g., gender, age/DOB, postcode, title, phone number), and other third-party provided data, with the Advertisers, even if such information is not directly displayed.
@@ -144,8 +114,6 @@ At Atar Growth, we may disclose your Personal Information in several contexts to
 We ensure that the use of your Personal Information aligns with the disclosures provided in this Privacy Policy and is subject to appropriate confidentiality and security measures.
 
 ## International Transfers of Personal Information
-
-## International Data Transfers at Atar Growth
 
 Atar Growth processes Personal Information on high-security servers that may be located outside the country where you reside. Our primary data centers are located in the USA. Before we transfer your Personal Information to an overseas recipient, we take necessary and reasonable steps to ensure that the recipient complies with privacy laws applicable to your Personal Information.
 
