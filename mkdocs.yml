@@ -2,9 +2,7 @@ site_name: Atar Integration Docs
 nav:
   - Overview: index.md
   - iOS SDK: ios-sdk.md
-  - Custom iOS Integration: ios-custom.md
   - Android SDK: android-sdk.md
-  - Custom Android Integration: ios-custom.md
 site_url: https://atar-growth.github.io/
 site_description: Atar Integration Docs
 site_author: Atar Growth
