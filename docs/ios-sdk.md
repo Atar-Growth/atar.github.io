@@ -149,9 +149,9 @@ Note that the callback is optional and purely in case you would like to tie any 
 | Req. | Field name  | Description                                    | Data type |
 |------|-------------|------------------------------------------------|-----------|
 | Req  | event       | User event that preceded the offers            | string    |
-| Req  | referenceId | Some ID for the reference for deduplication.   | string    |
-| Req  | email       | User email.                                    | string    |
+| Req  | referenceId | Some ID for reference for deduplication.       | string    |
 | Req  | userId      | Some ID for the user.                          | string    |
+| Rec  | email       | User email.                                    | string    |
 | Rec  | phone       | User phone number.                             | string    |
 | Rec  | gender      | User gender: M/F                               | string    |
 | Rec  | dob         | Date of birth, YYYYMMDD                        | string    |
