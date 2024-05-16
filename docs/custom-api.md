@@ -20,6 +20,9 @@ In order to retrieve an offer, you need to build a request object. The request o
 
 | Req. | Field name  | Description                                    | Data type |
 |------|-------------|------------------------------------------------|-----------|
+| Req  | os          | The os: ios, android, desktop                  | string    |
+| Req  | ip          | The user IP, optional for client calls         | string    |
+| Req  | count       | The number of offers you want to display       | string    |
 | Req  | event       | User event that preceded the offers            | string    |
 | Req  | referenceId | Some ID for reference for deduplication.       | string    |
 | Req  | userId      | Some ID for the user.                          | string    |
