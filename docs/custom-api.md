@@ -20,9 +20,6 @@ In order to retrieve an offer, you need to build a request object. The request o
 
 | Req. | Field name  | Description                                    | Data type |
 |------|-------------|------------------------------------------------|-----------|
-| Req  | os          | The os: ios, android, desktop                  | string    |
-| Req  | ip          | The user IP, optional for client calls         | string    |
-| Req  | count       | The number of offers you want to display       | string    |
 | Req  | event       | User event that preceded the offers            | string    |
 | Req  | referenceId | Some ID for reference for deduplication.       | string    |
 | Req  | userId      | Some ID for the user.                          | string    |
@@ -85,6 +82,8 @@ The post body includes important information for reporting segmentation and targ
 | aId         | Some user ID for the app                       | string    |
 | os          | Operating system (ios or android)              | string    |
 | platform    | Platform (phone, tablet, web, etc.)            | string    |
+| ip          | The user IP, optional for client side calls    | string    |
+| count       | The number of offers you want to display       | string    |
 | request     | The request object built above in JSON         | object    |
 
 Here are some examples of building the minimum request object in different languages:
