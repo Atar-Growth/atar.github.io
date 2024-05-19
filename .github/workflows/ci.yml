@@ -1,8 +1,8 @@
-name: ci 
+name: pages-deployment
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -11,19 +11,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+
+      - run: pip install mkdocs-material
+
+      - name: Save CNAME file
+        if: success()
+        run: |
+          mkdir -p site
+          if [ -f "site/CNAME" ]; then
+            cp site/CNAME site/CNAME.bak
+          fi
+
       - run: mkdocs gh-deploy --force
+
+      - name: Restore CNAME file
+        if: success()
+        run: |
+          if [ -f "site/CNAME.bak" ]; then
+            cp site/CNAME.bak site/CNAME
+            cd site
+            git add CNAME
+            git commit -m "Restore CNAME file"
+            git push
+          fi
