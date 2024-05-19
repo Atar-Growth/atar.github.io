@@ -134,13 +134,13 @@ Here are some examples of building the minimum request object in different langu
     
 ### 2.3 Make the API call and handle response
 
-Once you have built the request object, you can make the API call to retrieve an offer. The API endpoint is `https://api.atargrowth.com/v1/offers`. You need to pass the request object as the body of the request and the App Key as a header.
+Once you have built the request object, you can make the API call to retrieve an offer. The API endpoint is `https://api.atargrowth.com/offers`. You need to pass the request object as the body of the request and the App Key as a header.
 
 Here are some examples of making the API call in different languages:
 
 === "Swift"
     ```swift
-    let url = URL(string: "https://api.atargrowth.com/v1/offers")!
+    let url = URL(string: "https://api.atargrowth.com/offers")!
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -171,7 +171,7 @@ Here are some examples of making the API call in different languages:
 
 === "Objective C"
     ```objc
-    NSURL *url = [NSURL URLWithString:@"https://api.atargrowth.com/v1/offers"];
+    NSURL *url = [NSURL URLWithString:@"https://api.atargrowth.com/offers"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPMethod = @"POST";
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
@@ -196,7 +196,7 @@ Here are some examples of making the API call in different languages:
 
 === "Kotlin"
     ```kotlin
-    val url = URL("https://api.atargrowth.com/v1/offers")
+    val url = URL("https://api.atargrowth.com/offers")
     val connection = url.openConnection() as HttpURLConnection
     connection.requestMethod = "POST"
     connection.setRequestProperty("Content-Type", "application/json")
@@ -222,7 +222,7 @@ Here are some examples of making the API call in different languages:
     
 === "Java"
     ```java
-    URL url = new URL("https://api.atargrowth.com/v1/offers");
+    URL url = new URL("https://api.atargrowth.com/offers");
     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
     connection.setRequestMethod("POST");
     connection.setRequestProperty("Content-Type", "application/json");
