@@ -25,7 +25,7 @@ To further optimize the integration, you can add Atar's lightweight SDK to your 
 - [Android](android-sdk.md) shows how to enable offers with Atar's Android SDK.
 - [iOS](ios-sdk.md) shows how to enable offers with Atar's iOS SDK.
 - [Custom API integration](custom-api.md) shows how to build your own client side integration with the Atar API.
-- [Custom iFrame integration](custom-iframe.md) shows how to build your own iframe integration with Atar.
+- [Custom Webview integration](custom-iframe.md) shows how to build your own iframe-based integration with Atar.
 
 ## Need help?
 

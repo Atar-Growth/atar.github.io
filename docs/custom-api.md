@@ -2,7 +2,7 @@
 hide:
   - footer
 ---
-# Integrate your app with Atar
+# Atar Custom API Integration
 
 The guide below will walk you through the steps to integrate Atar into your app via a custom integration
 

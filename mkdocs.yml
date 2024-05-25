@@ -3,7 +3,8 @@ nav:
   - Overview: index.md
   - iOS SDK: ios-sdk.md
   - Android SDK: android-sdk.md
-  - Custom API Integration: custom-api.md
+  - API Integration: custom-api.md
+  - Webview / iFrame Integration: custom-iframe.md
 site_url: https://atar-growth.github.io/
 site_description: Atar Integration Docs
 site_author: Atar Growth
