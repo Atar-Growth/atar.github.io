@@ -16,7 +16,7 @@ The Atar SDK is distributed as an AAR file. You can follow these instructions to
 
 ### 2.1 Download the AAR
 
-Download the Atar Android SDK AAR file from here: [https://postintent-hosting.s3.amazonaws.com/atar-sdk-1.0.aar](https://postintent-hosting.s3.amazonaws.com/atar-sdk-1.0.aar)
+Download the Atar Android SDK AAR file from here: [https://postintent-hosting.s3.amazonaws.com/atar-sdk-1.0.1.aar](https://postintent-hosting.s3.amazonaws.com/atar-sdk-1.0.1.aar)
 
 ### 2.2 Add the AAR to your project
 
@@ -24,7 +24,7 @@ Place the Atar SDK in the `libs` folder of your Android project. If you don’t 
 
 ```bash
 project-folder/src/main/java/com/example/project/MainActivity.java
-project-folder/libs/atar-sdk-1.0.aar
+project-folder/libs/atar-sdk-1.0.1.aar
 ```
 
 ### 2.3 Add the AAR to your build.gradle
@@ -33,7 +33,7 @@ Open your app's build.gradle file and add the following line to the dependencies
 
 ```groovy
 dependencies {
-    implementation files('libs/atar-sdk-1.0.aar')
+    implementation files('libs/atar-sdk-1.0.1.aar')
 }
 ```
 
@@ -41,7 +41,7 @@ or in other Gradle versions:
 
 ```groovy
 dependencies {
-  implementation(files('libs/atar-sdk-1.0.aar'))
+  implementation(files('libs/atar-sdk-1.0.1.aar'))
 }
 ```
 
@@ -77,27 +77,35 @@ Once you've initialized the Atar SDK, you can show offers to your users. Here's 
 === "Java"
     ```java
     OfferRequest request = new OfferRequest(new OfferRequestCallback() {
-    @Override
-    public void onShown(boolean success, Exception error) {
-        if (success) {
-            Log.i("AtarTestBed", "Popup shown successfully");
-        } else {
-            Log.e("AtarTestBed", "Error: " + error.getMessage());
+        @Override
+        public void onPopupShown(boolean success, String error) {
+            if (success) {
+                Log.i("YourApp", "Popup shown successfully");
+            } else {
+                Log.e("YourApp", "Error: " + error);
+            }
         }
-    }
-    @Override
-    public void onClicked() {
-        Log.i("AtarTestBed", "Interstitial was clicked!");
-    }
+        @Override
+        public void onPopupCanceled() {
+            Log.i("YourApp", "Popup was canceled and closed");
+        }
+        @Override
+        public void onClicked() {
+            Log.i("YourApp", "Popup was clicked and closed!");
+        }
     });
 
     // Complete the information about the user and transaction
+
+    // Required
     request.event = "purchase";
     request.userId = "userId1234";
+    request.referenceId = "12345"; // this is some unique reference ID for the transaction
+    
+    // Recommended
     request.email = "user1234@email.com";
     request.phone = "1234567890";
-    // this is some unique reference ID for the transaction
-    request.referenceId = "12345;
+    
     request.gender = "M";
     request.dob = "YYYYMMDD";
     request.address1 = "123 Example St";
@@ -114,27 +122,32 @@ Once you've initialized the Atar SDK, you can show offers to your users. Here's 
 === "Kotlin"
     ```kotlin
     val request = OfferRequest(object : OfferRequestCallback {
-      override fun onShown(success: Boolean, error: Exception?) {
-          if (success) {
-              Log.i("AtarTestBed", "Popup shown successfully")
-          } else {
-              Log.e("AtarTestBed", "Error: " + error?.message)
-          }
-      }
-      override fun onClicked() {
-          Log.i("AtarTestBed", "Interstitial was clicked!")
-      }
+        override fun onPopupShown(success: Boolean, error: String?) {
+            if (success) {
+                Log.i("YourApp", "Popup shown successfully")
+            } else {
+                Log.e("YourApp", "Error: " + error?.message)
+            }
+        }
+        override fun onCanceled() {
+            Log.i("YourApp", "Popup was canceled and closed")
+        }
+        override fun onClicked() {
+            Log.i("YourApp", "Popup was clicked and closed!")
+        }
     })
 
     // Complete the information about the user and transaction
+
+    // Required
     request.event = "purchase";
     request.userId = "userId1234";
+    request.referenceId = "12345"; // this is some unique reference ID for the transaction
+
+    // Recommended
     request.email = "user1234@email.com";
     request.phone = "1234567890";
-    // this is some unique referenced ID for the transaction
-    request.referenceId = "12345";
 
-    .randomUUID().toString(); 
     request.gender = "M";
     request.dob = "YYYYMMDD";
     request.address1 = "123 Example St";
@@ -173,6 +186,91 @@ Note that the callback is optional and purely in case you would like to tie any 
 | Opt  | city        | City                                           | string    |
 | Opt  | state       | State                                          | string    |
 | Opt  | country     | Country                                        | string    |
+
+## Step 5: Trigger offer notifications on user action
+
+You can also trigger offer notifications on user actions. Here's an example of how you can trigger an offer notification.
+
+=== "Java"
+    ```java
+    OfferRequest request = new OfferRequest(new OfferRequestCallback() {
+        @Override
+        public void onNotifScheduled(boolean success, String error) {
+            if (success) {
+                Log.i("YourApp", "Popup shown successfully");
+            } else {
+                Log.e("YourApp", "Error: " + error);
+            }
+        }
+        @Override
+        public void onClicked() {
+            Log.i("YourApp", "Popup was clicked and closed!");
+        }
+    });
+    request.event = "level_completed";
+    request.referenceId = UUID.randomUUID().toString();
+    request.userId = "userId1234";
+    
+    Atar.getInstance().triggerOfferNotification(request);
+    ```
+
+=== "Kotlin"
+    ```kotlin
+    val request = OfferRequest(object : OfferRequestCallback {
+        override fun onNotifScheduled(success: Boolean, error: String?) {
+            if (success) {
+                Log.i("YourApp", "Popup shown successfully")
+            } else {
+                Log.e("YourApp", "Error: " + error?)
+            }
+        }
+        override fun onClicked() {
+            Log.i("YourApp", "Popup was clicked and closed!")
+        }
+    })
+
+    request.event = "level_completed"
+    request.referenceId = UUID.randomUUID().toString()
+    request.userId = "userId1234"
+    
+    Atar.getInstance().triggerOfferNotification(request)
+    ```
+
+### Customize the prefix for the push message
+
+You can customize the prefix for the push message by passing your custom string to the triggerOffer method as shown below:
+
+=== "Java"
+    ```java
+    Atar.getInstance().triggerOfferNotification(request, "You're awesome!");
+    ```
+
+=== "Kotlin"
+    ```kotlin
+    Atar.getInstance().triggerOfferNotification(request, "You're awesome!")
+    ```
+
+## Step 6: Enable or disable the post session notification
+
+You have full control over whether post session notifications are enabled or disabled. By default, post session notifications are disabled, so you would have to have previously enabled it.
+
+### Disable post session notifications globally
+
+You can head to the [dashboard settings](https://app.atargrowth.com/settings) and disable post session notifications globally. This will disable post session notifications for all users.
+
+### Disable post session notifications for a specific user
+
+To disable for a specific user, you can use the following method in the SDK whenever. This is persisted in user defaults and will be remembered for the user.
+
+=== "Java"
+    ```java
+    Atar.getInstance().setPostSessionNotifDisabled(true);
+    ```
+
+=== "Kotlin"
+    ```kotlin
+    Atar.getInstance().setPostSessionNotifDisabled(true)
+    ```
 
 ## Need help?
 
