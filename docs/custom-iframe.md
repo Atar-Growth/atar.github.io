@@ -832,7 +832,10 @@ To use the below Android interstitial, you can create an instance of the `Inters
         }
 
         public void dismiss() {
-            animate().alpha(0f).setDuration(300).withEndAction(() -> ((ViewGroup) getParent()).removeView(this)).start();
+            if (contextActivity == null) {
+                return;
+            }
+            contextActivity.runOnUiThread(() -> animate().alpha(0f).setDuration(300).withEndAction(() -> ((ViewGroup) getParent()).removeView(this)).start());
         }
     }
     ```
@@ -976,7 +979,9 @@ To use the below Android interstitial, you can create an instance of the `Inters
         }
 
         public fun dismiss() {
-            animate().alpha(0f).setDuration(300).withEndAction { (parent as ViewGroup).removeView(this) }.start()
+            contextActivity?.runOnUiThread {
+                animate().alpha(0f).setDuration(300).withEndAction { (parent as ViewGroup).removeView(this) }.start()
+            }
         }
     }
     ```
