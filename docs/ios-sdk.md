@@ -172,18 +172,18 @@ Note that the callback is optional and purely in case you would like to tie any 
 | Opt  | state       | State                                          | string    |
 | Opt  | country     | Country                                        | string    |
 
-## Step 5: Trigger offer notifications on user action
+## Step 5: Trigger offer messages on user action
 
-You can also trigger offer notifications on user actions. Here's an example of how you can trigger an offer notification.
+You can also trigger offer message on user actions. Here's an example of how you can trigger an offer message.
 
 === "Swift"
     ```swift
     let request = OfferRequest()
-    request.onNotifScheduled = { success, error in
-        print("onNotifScheduled: \(success), \(error ?? "no error")")
+    request.onPopupShown = { success, error in
+        print("onPopupShown: \(success), \(error ?? "no error")")
     }
-    request.onNotifSent = {
-        print("onNotifSent")
+    request.onPopupCanceled = {
+        print("onPopupCanceled")
     }
     request.onClicked = {
         print("onClicked")
@@ -192,17 +192,17 @@ You can also trigger offer notifications on user actions. Here's an example of h
     request.referenceId = UUID().uuidString
     request.userId = "userId1234"
     
-    Atar.getInstance().triggerOfferNotification(request: request)
+    Atar.getInstance().showOfferMessage(request: request)
     ```
 
 === "Objective C"
     ```objc
     OfferRequest *request = [[OfferRequest alloc] init];
-    request.onNotifScheduled = ^(BOOL success, NSString * _Nullable error) {
-        NSLog(@"onNotifScheduled: %d, %@", success, error);
+    request.onPopupShown = ^(BOOL success, NSString * _Nullable error) {
+        NSLog(@"onPopupShown: %d, %@", success, error);
     };
-    request.onNotifSent = ^{
-        NSLog(@"onNotifSent");
+    request.onPopupCanceled = ^{
+        NSLog(@"onPopupCanceled");
     };
     request.onClicked = ^{
         NSLog(@"onClicked");
@@ -211,21 +211,7 @@ You can also trigger offer notifications on user actions. Here's an example of h
     request.referenceId = [[NSUUID UUID] UUIDString];
     request.userId = @"userId1234";
     
-    [[Atar getInstance] triggerOfferNotificationWithRequest:request];
-    ```
-
-### Customize the prefix for the push message
-
-You can customize the prefix for the push message by passing your custom string to the triggerOffer method as shown below:
-
-=== "Swift"
-    ```swift
-    Atar.getInstance().triggerOfferNotification(request: request, titlePrefix: "You're awesome!")
-    ```
-
-=== "Objective C"
-    ```objc
-    [[Atar getInstance] triggerOfferNotificationWithRequest:request titlePrefix:@"You're awesome!"];
+    [[Atar getInstance] showOfferMessageWithRequest:request];
     ```
 
 ## Step 6: Enable or disable the post session notification
@@ -248,6 +234,28 @@ To disable for a specific user, you can use the following method in the SDK when
 === "Objective C"
     ```objc
     [[Atar getInstance] setPostSessionNotifDisabledWithDisabled:YES];
+    ```
+
+## Step 7: Enable or disable the mid session message popup
+
+You have full control over whether mid session message are enabled or disabled. By default, mid session message are disabled, so you would have to have previously enabled it.
+
+### Disable mid session message globally
+
+You can head to the [dashboard settings](https://app.atargrowth.com/settings) and disable mid session message globally. This will disable mid session message for all users.
+
+### Disable mid session message for a specific user
+
+To disable for a specific user, you can use the following method in the SDK whenever. This is persisted in user defaults and will be remembered for the user.
+
+=== "Swift"
+    ```swift
+    Atar.getInstance().setMidSessionMessageDisabled(disabled: true)
+    ```
+
+=== "Objective C"
+    ```objc
+    [[Atar getInstance] setMidSessionMessageDisabled:YES];
     ```
 
 ## Need help?

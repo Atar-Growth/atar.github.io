@@ -357,6 +357,81 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#step-5-trigger-offer-messages-on-user-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Trigger offer messages on user action
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-enable-or-disable-the-post-session-notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Enable or disable the post session notification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Enable or disable the post session notification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-post-session-notifications-globally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable post session notifications globally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-post-session-notifications-for-a-specific-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable post session notifications for a specific user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-enable-or-disable-the-mid-session-message-popup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Enable or disable the mid session message popup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7: Enable or disable the mid session message popup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-mid-session-message-globally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable mid session message globally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-mid-session-message-for-a-specific-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable mid session message for a specific user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#need-help" class="md-nav__link">
     <span class="md-ellipsis">
       Need help?
@@ -404,7 +479,27 @@
         
   
   <span class="md-ellipsis">
-    Custom API Integration
+    API Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-iframe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Webview / iFrame Integration
   </span>
   
 
@@ -526,6 +621,81 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#step-5-trigger-offer-messages-on-user-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Trigger offer messages on user action
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-enable-or-disable-the-post-session-notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Enable or disable the post session notification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Enable or disable the post session notification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-post-session-notifications-globally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable post session notifications globally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-post-session-notifications-for-a-specific-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable post session notifications for a specific user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-enable-or-disable-the-mid-session-message-popup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Enable or disable the mid session message popup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 7: Enable or disable the mid session message popup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-mid-session-message-globally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable mid session message globally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-mid-session-message-for-a-specific-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disable mid session message for a specific user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#need-help" class="md-nav__link">
     <span class="md-ellipsis">
       Need help?
@@ -615,64 +785,70 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-swift highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">let</span> <span class="nv">request</span> <span class="p">=</span> <span class="n">OfferRequest</span><span class="p">()</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">request</span><span class="p">.</span><span class="n">onScheduled</span> <span class="p">=</span> <span class="p">{</span> <span class="n">success</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onScheduled: </span><span class="si">\(</span><span class="n">success</span><span class="si">)</span><span class="s">, </span><span class="si">\(</span><span class="n">error</span><span class="p">?.</span><span class="n">localizedDescription</span> <span class="p">??</span> <span class="s">&quot;no error&quot;</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupShown</span> <span class="p">=</span> <span class="p">{</span> <span class="n">success</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onPopupShown: </span><span class="si">\(</span><span class="n">success</span><span class="si">)</span><span class="s">, </span><span class="si">\(</span><span class="n">error</span> <span class="p">??</span> <span class="s">&quot;no error&quot;</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">request</span><span class="p">.</span><span class="n">onSent</span> <span class="p">=</span> <span class="p">{</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onSent&quot;</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupCanceled</span> <span class="p">=</span> <span class="p">{</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onPopupCanceled&quot;</span><span class="p">)</span>
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
 </span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">request</span><span class="p">.</span><span class="n">onClicked</span> <span class="p">=</span> <span class="p">{</span>
 </span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onClicked&quot;</span><span class="p">)</span>
 </span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">}</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">request</span><span class="p">.</span><span class="n">event</span> <span class="p">=</span> <span class="s">&quot;purchase&quot;</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">request</span><span class="p">.</span><span class="n">userId</span> <span class="p">=</span> <span class="s">&quot;userId5678&quot;</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">request</span><span class="p">.</span><span class="n">email</span> <span class="p">=</span> <span class="s">&quot;user1234@email.com&quot;</span><span class="p">;</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">request</span><span class="p">.</span><span class="n">phone</span> <span class="p">=</span> <span class="s">&quot;1234567890&quot;</span><span class="p">;</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c1">// this is some unique reference ID for the transaction</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="n">request</span><span class="p">.</span><span class="n">referenceId</span> <span class="p">=</span> <span class="s">&quot;123456&quot;</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="n">request</span><span class="p">.</span><span class="n">firstName</span> <span class="p">=</span> <span class="s">&quot;Alex&quot;</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="n">request</span><span class="p">.</span><span class="n">lastName</span> <span class="p">=</span> <span class="s">&quot;Austin&quot;</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="n">request</span><span class="p">.</span><span class="n">address1</span> <span class="p">=</span> <span class="s">&quot;123 Example St&quot;</span>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="n">request</span><span class="p">.</span><span class="n">address2</span> <span class="p">=</span> <span class="s">&quot;Suite 123&quot;</span>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="n">request</span><span class="p">.</span><span class="n">city</span> <span class="p">=</span> <span class="s">&quot;Big City&quot;</span>
-</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="n">request</span><span class="p">.</span><span class="n">state</span> <span class="p">=</span> <span class="s">&quot;ST&quot;</span>
-</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="n">request</span><span class="p">.</span><span class="n">zip</span> <span class="p">=</span> <span class="s">&quot;12345&quot;</span>
-</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="n">request</span><span class="p">.</span><span class="n">country</span> <span class="p">=</span> <span class="s">&quot;US&quot;</span>
-</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="n">request</span><span class="p">.</span><span class="n">amount</span> <span class="p">=</span> <span class="mf">29.98</span>
-</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>
-</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="n">Atar</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">showOfferPopup</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1">// required</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">request</span><span class="p">.</span><span class="n">event</span> <span class="p">=</span> <span class="s">&quot;purchase&quot;</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">request</span><span class="p">.</span><span class="n">userId</span> <span class="p">=</span> <span class="s">&quot;userId5678&quot;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">request</span><span class="p">.</span><span class="n">referenceId</span> <span class="p">=</span> <span class="s">&quot;123456&quot;</span> <span class="c1">// this is some unique reference ID for the transaction</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c1">// recommended</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="n">request</span><span class="p">.</span><span class="n">email</span> <span class="p">=</span> <span class="s">&quot;user1234@email.com&quot;</span><span class="p">;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="n">request</span><span class="p">.</span><span class="n">phone</span> <span class="p">=</span> <span class="s">&quot;1234567890&quot;</span><span class="p">;</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="n">request</span><span class="p">.</span><span class="n">firstName</span> <span class="p">=</span> <span class="s">&quot;Alex&quot;</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="n">request</span><span class="p">.</span><span class="n">lastName</span> <span class="p">=</span> <span class="s">&quot;Austin&quot;</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="n">request</span><span class="p">.</span><span class="n">address1</span> <span class="p">=</span> <span class="s">&quot;123 Example St&quot;</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="n">request</span><span class="p">.</span><span class="n">address2</span> <span class="p">=</span> <span class="s">&quot;Suite 123&quot;</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="n">request</span><span class="p">.</span><span class="n">city</span> <span class="p">=</span> <span class="s">&quot;Big City&quot;</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="n">request</span><span class="p">.</span><span class="n">state</span> <span class="p">=</span> <span class="s">&quot;ST&quot;</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="n">request</span><span class="p">.</span><span class="n">zip</span> <span class="p">=</span> <span class="s">&quot;12345&quot;</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="n">request</span><span class="p">.</span><span class="n">country</span> <span class="p">=</span> <span class="s">&quot;US&quot;</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="n">request</span><span class="p">.</span><span class="n">amount</span> <span class="p">=</span> <span class="mf">29.98</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="n">Atar</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">showOfferPopup</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-objc highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">OfferRequest</span><span class="w"> </span><span class="o">*</span><span class="n">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="n">OfferRequest</span><span class="w"> </span><span class="n">alloc</span><span class="p">]</span><span class="w"> </span><span class="n">init</span><span class="p">];</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">request</span><span class="p">.</span><span class="n">onScheduled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span><span class="w"> </span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="bp">NSError</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_Nullable</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onScheduled: %d, %@&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="n">localizedDescription</span><span class="p">);</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupShown</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span><span class="w"> </span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="bp">NSString</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_Nullable</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onPopupShown: %d, %@&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">);</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">};</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">request</span><span class="p">.</span><span class="n">onSent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">{</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onSent&quot;</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupCanceled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">{</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onPopupCanceled&quot;</span><span class="p">);</span>
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">};</span>
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">request</span><span class="p">.</span><span class="n">onClicked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">{</span>
 </span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onClicked&quot;</span><span class="p">);</span>
 </span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">};</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">request</span><span class="p">.</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;purchase&quot;</span><span class="p">;</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">request</span><span class="p">.</span><span class="n">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;userId5678&quot;</span><span class="p">;</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">request</span><span class="p">.</span><span class="n">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;user1234@email.com&quot;</span><span class="p">;</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">request</span><span class="p">.</span><span class="n">phone</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;1234567890&quot;</span><span class="p">;</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="c1">// this is some unique reference ID for the transaction</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="n">request</span><span class="p">.</span><span class="n">referenceId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;123456&quot;</span><span class="p">;</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="n">request</span><span class="p">.</span><span class="n">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Alex&quot;</span><span class="p">;</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">request</span><span class="p">.</span><span class="n">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Austin&quot;</span><span class="p">;</span>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="n">request</span><span class="p">.</span><span class="n">address1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;123 Example St&quot;</span><span class="p">;</span>
-</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">request</span><span class="p">.</span><span class="n">address2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Suite 123&quot;</span><span class="p">;</span>
-</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="n">request</span><span class="p">.</span><span class="n">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Big City&quot;</span><span class="p">;</span>
-</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="n">request</span><span class="p">.</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;ST&quot;</span><span class="p">;</span>
-</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="n">request</span><span class="p">.</span><span class="n">zip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;12345&quot;</span><span class="p">;</span>
-</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="n">request</span><span class="p">.</span><span class="n">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;US&quot;</span><span class="p">;</span>
-</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="n">request</span><span class="p">.</span><span class="n">amount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">29.98</span><span class="p">;</span>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>
-</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="p">[[</span><span class="n">Atar</span><span class="w"> </span><span class="n">getInstance</span><span class="p">]</span><span class="w"> </span><span class="n">showOfferPopupWithRequest</span><span class="o">:</span><span class="n">request</span><span class="p">];</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1">// required</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">request</span><span class="p">.</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;purchase&quot;</span><span class="p">;</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">request</span><span class="p">.</span><span class="n">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;userId5678&quot;</span><span class="p">;</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="n">request</span><span class="p">.</span><span class="n">referenceId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;123456&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// this is some unique reference ID for the transaction</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="c1">// recommended</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="n">request</span><span class="p">.</span><span class="n">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;user1234@email.com&quot;</span><span class="p">;</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">request</span><span class="p">.</span><span class="n">phone</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;1234567890&quot;</span><span class="p">;</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">request</span><span class="p">.</span><span class="n">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Alex&quot;</span><span class="p">;</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="n">request</span><span class="p">.</span><span class="n">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Austin&quot;</span><span class="p">;</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="n">request</span><span class="p">.</span><span class="n">address1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;123 Example St&quot;</span><span class="p">;</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="n">request</span><span class="p">.</span><span class="n">address2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Suite 123&quot;</span><span class="p">;</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="n">request</span><span class="p">.</span><span class="n">city</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;Big City&quot;</span><span class="p">;</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="n">request</span><span class="p">.</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;ST&quot;</span><span class="p">;</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="n">request</span><span class="p">.</span><span class="n">zip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;12345&quot;</span><span class="p">;</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="n">request</span><span class="p">.</span><span class="n">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;US&quot;</span><span class="p">;</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="n">request</span><span class="p">.</span><span class="n">amount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">29.98</span><span class="p">;</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="p">[[</span><span class="n">Atar</span><span class="w"> </span><span class="n">getInstance</span><span class="p">]</span><span class="w"> </span><span class="n">showOfferPopupWithRequest</span><span class="o">:</span><span class="n">request</span><span class="p">];</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -794,6 +970,84 @@
 </tr>
 </tbody>
 </table>
+<h2 id="step-5-trigger-offer-messages-on-user-action">Step 5: Trigger offer messages on user action</h2>
+<p>You can also trigger offer message on user actions. Here's an example of how you can trigger an offer message.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Swift</label><label for="__tabbed_4_2">Objective C</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">let</span> <span class="nv">request</span> <span class="p">=</span> <span class="n">OfferRequest</span><span class="p">()</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupShown</span> <span class="p">=</span> <span class="p">{</span> <span class="n">success</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onPopupShown: </span><span class="si">\(</span><span class="n">success</span><span class="si">)</span><span class="s">, </span><span class="si">\(</span><span class="n">error</span> <span class="p">??</span> <span class="s">&quot;no error&quot;</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupCanceled</span> <span class="p">=</span> <span class="p">{</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onPopupCanceled&quot;</span><span class="p">)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">request</span><span class="p">.</span><span class="n">onClicked</span> <span class="p">=</span> <span class="p">{</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;onClicked&quot;</span><span class="p">)</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">}</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">request</span><span class="p">.</span><span class="n">event</span> <span class="p">=</span> <span class="s">&quot;level_completed&quot;</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">request</span><span class="p">.</span><span class="n">referenceId</span> <span class="p">=</span> <span class="n">UUID</span><span class="p">().</span><span class="n">uuidString</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="n">request</span><span class="p">.</span><span class="n">userId</span> <span class="p">=</span> <span class="s">&quot;userId1234&quot;</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="n">Atar</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">showOfferMessage</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-objc highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">OfferRequest</span><span class="w"> </span><span class="o">*</span><span class="n">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="n">OfferRequest</span><span class="w"> </span><span class="n">alloc</span><span class="p">]</span><span class="w"> </span><span class="n">init</span><span class="p">];</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupShown</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span><span class="w"> </span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="bp">NSString</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">_Nullable</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onPopupShown: %d, %@&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">);</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">};</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">request</span><span class="p">.</span><span class="n">onPopupCanceled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">{</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onPopupCanceled&quot;</span><span class="p">);</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">};</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">request</span><span class="p">.</span><span class="n">onClicked</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">^</span><span class="p">{</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;onClicked&quot;</span><span class="p">);</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">};</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">request</span><span class="p">.</span><span class="n">event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;level_completed&quot;</span><span class="p">;</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="n">request</span><span class="p">.</span><span class="n">referenceId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="bp">NSUUID</span><span class="w"> </span><span class="n">UUID</span><span class="p">]</span><span class="w"> </span><span class="n">UUIDString</span><span class="p">];</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="n">request</span><span class="p">.</span><span class="n">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">@&quot;userId1234&quot;</span><span class="p">;</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="p">[[</span><span class="n">Atar</span><span class="w"> </span><span class="n">getInstance</span><span class="p">]</span><span class="w"> </span><span class="n">showOfferMessageWithRequest</span><span class="o">:</span><span class="n">request</span><span class="p">];</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="step-6-enable-or-disable-the-post-session-notification">Step 6: Enable or disable the post session notification</h2>
+<p>You have full control over whether post session notifications are enabled or disabled. By default, post session notifications are disabled, so you would have to have previously enabled it.</p>
+<h3 id="disable-post-session-notifications-globally">Disable post session notifications globally</h3>
+<p>You can head to the <a href="https://app.atargrowth.com/settings">dashboard settings</a> and disable post session notifications globally. This will disable post session notifications for all users.</p>
+<h3 id="disable-post-session-notifications-for-a-specific-user">Disable post session notifications for a specific user</h3>
+<p>To disable for a specific user, you can use the following method in the SDK whenever. This is persisted in user defaults and will be remembered for the user.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Swift</label><label for="__tabbed_5_2">Objective C</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">Atar</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">setPostSessionNotifDisabled</span><span class="p">(</span><span class="n">disabled</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-objc highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">[[</span><span class="n">Atar</span><span class="w"> </span><span class="n">getInstance</span><span class="p">]</span><span class="w"> </span><span class="n">setPostSessionNotifDisabledWithDisabled</span><span class="o">:</span><span class="nb">YES</span><span class="p">];</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="step-7-enable-or-disable-the-mid-session-message-popup">Step 7: Enable or disable the mid session message popup</h2>
+<p>You have full control over whether mid session message are enabled or disabled. By default, mid session message are disabled, so you would have to have previously enabled it.</p>
+<h3 id="disable-mid-session-message-globally">Disable mid session message globally</h3>
+<p>You can head to the <a href="https://app.atargrowth.com/settings">dashboard settings</a> and disable mid session message globally. This will disable mid session message for all users.</p>
+<h3 id="disable-mid-session-message-for-a-specific-user">Disable mid session message for a specific user</h3>
+<p>To disable for a specific user, you can use the following method in the SDK whenever. This is persisted in user defaults and will be remembered for the user.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Swift</label><label for="__tabbed_6_2">Objective C</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">Atar</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">setMidSessionMessageDisabled</span><span class="p">(</span><span class="n">disabled</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-objc highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">[[</span><span class="n">Atar</span><span class="w"> </span><span class="n">getInstance</span><span class="p">]</span><span class="w"> </span><span class="n">setMidSessionMessageDisabled</span><span class="o">:</span><span class="nb">YES</span><span class="p">];</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
 <h2 id="need-help">Need help?</h2>
 <p>If you have any questions or need help, please contact us at <a href="mailto:support@atargrowth.com">support@atargrowth.com</a>.</p>
 
